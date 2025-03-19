@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in</title>
+	<!-- Favicon -->
+	<link href="images/favicon.png" rel="icon" type="images/icon">
+	<!-- Nucleo-icon css-->
+	<link href="css/nucleo-icons.css" rel="stylesheet" type="text/css">
+	<!-- Fontawesome-icon css-->
+	<link href="css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- Bootstrap-icon css-->
+	<link href="css/Bootstrap-icons.css" rel="stylesheet" type="text/css">
+	<!-- Bootstrap css-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<!-- Fonts css-->
+	<link href="css/fonts.css" rel="stylesheet" type="text/css">
+	<!-- Custom css-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<main>
+	<div class="page-wrapper w-100 vh-100">
+		<div class="login-page w-100 vh-100 d-flex">
+			<div class="col-6 d-flex align-items-center">
+				<div class="login-detail">
+					<form class="mt-3 m-auto">
+						<h4>Sign In</h4>
+						<div class="mb-3">
+							<label for="exampleInputEmail1" class="form-label mb-4">Enter your email and password to sign in</label>
+							<input type="email" placeholder="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						</div>
+						<div class="mb-3">
+							<input type="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
+						</div>
+						<div class="form-check form-switch mb-4">
+							<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+							<label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+						</div>
+						<div class="d-grid">
+							<button type="submit" class="btn btn-primary d-block">Sign In</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-6 d-flex text-center align-items-center">
+				<div class="login-img align-items-center">
+					<div class="contant">
+						<img src="images/chat.png">
+						<div class="detail">
+						<h4>"Attention is the new currency"</h4>
+						<p>The more effortless the writing looks, the more effort the writer actually put into the process.</p>
+					</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	</main>
+	<script src="js/jquery-3.6.4.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+	<script src="js/index.js" type="text/javascript"></script>
+	<script src="js/map.js" type="text/javascript"></script>
+	<script src="js/worldLow.js" type="text/javascript"></script>
+	<script src="js/Animated.js" type="text/javascript"></script>
+	<script src="js/apexcharts.js" type="text/javascript"></script>
+
+	<script>
+		$(".sidebar-dropdown > a").click(function () {
+			$(".sidebar-dropdown-menu").slideUp(400);
+			if ($(this).parent().hasClass("active")) {
+				$(".sidebar-dropdown").removeClass("active");
+				$(this).parent().removeClass("active");
+			}
+			else {
+				$(".sidebar-dropdown").removeClass("active");
+				$(this).next(".sidebar-dropdown-menu").slideDown(400);
+				$(this).parent().addClass("active");
+			}
+		});
+		$(".sidebar-subdropdown > a").click(function () {
+			$(".sidebar-subdropdown-menu").slideUp(400);
+			if ($(this).parent().hasClass("active")) {
+				$(".sidebar-subdropdown").removeClass("active");
+				$(this).parent().removeClass("active");
+			}
+			else {
+				$(".sidebar-subdropdown").removeClass("active");
+				$(this).next(".sidebar-saubdropdown-menu").slideDown(400);
+				$(this).parent().addClass("active");
+			}
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			$(".toggle-menu").click(function () {
+				$(".sidebar").toggleClass("collaps-sidebar");
+				$(".page-body").toggleClass("collaps-page-body");
+			});
+		});
+	</script>
+</body>
+
+</html>
