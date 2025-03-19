@@ -21,6 +21,9 @@ This is a modern and responsive admin panel built using HTML, CSS, Bootstrap, an
 
 
 
+📷 Preview
+
+![screencapture-127-0-0-1-5500-dashboard-html-2025-03-19-10_55_35](https://github.com/user-attachments/assets/5a5f72ea-c523-4a68-a4f6-0f8f57d17f14)
 
 
 
